@@ -1,3 +1,4 @@
+@import './style/main.scss';
 .test{
-  h2{color:red}
+  h2{background-color:$test-color}
 }

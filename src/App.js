@@ -5,10 +5,8 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import Home from "./views/Home";
-import About from "./views/About";
+import Index from './views/login/Index'
 import "./App.scss";
-import { DatePicker } from "antd";
 export default class App extends React.Component {
   constructor(params) {
     super(params);
@@ -17,21 +15,13 @@ export default class App extends React.Component {
   render() {
     return (
       <Fragment>
-        <div className="test">
-          <DatePicker />
           <Router>
             <HashRouter>
               <Switch>
-                <Route component={Home} exact path="/">
-                  {" "}
-                </Route>{" "}
-                <Route component={About} path="/about">
-                  {" "}
-                </Route>{" "}
-              </Switch>{" "}
-            </HashRouter>{" "}
-          </Router>{" "}
-        </div>{" "}
+                <Route component={Index} exact path="/"></Route>
+              </Switch>
+            </HashRouter>
+          </Router>
       </Fragment>
     );
   }
